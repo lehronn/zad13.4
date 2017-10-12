@@ -1,5 +1,4 @@
 var os = require('os');
-var getOS = require('./getOsInfo');
 
 var uptime = os.uptime();
 var result;
