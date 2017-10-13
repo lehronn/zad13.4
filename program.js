@@ -6,7 +6,7 @@ console.log('Hello, let`s write some commands:');
 
 process.stdin.on('readable', function() {
   var input = process.stdin.read();
-  
+
   if (input !== null) {
     var instruction = input.trim();
     switch(instruction) {
@@ -14,7 +14,7 @@ process.stdin.on('readable', function() {
         process.stdout.write('Program is quitting now.\n');
         process.exit();
       case "getOSinfo":
-        OSinfo.print();
+        OSinfo.getOSinfo();
         break;
       case "nodejs-ver":
         console.log(process.versions.node);
